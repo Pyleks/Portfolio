@@ -574,7 +574,7 @@ body {
     display: none;
 }
 
-..box-property {
+.box-property {
     height: 33em;
 }
 
