@@ -25,6 +25,10 @@ time, mark, audio, video {
 html {
     scroll-behavior: smooth;
 }
+
+.card {
+    border: none !important;
+}
 /************ Font ************/
 body {
     font-family: 'Cinzel', serif;
@@ -54,7 +58,7 @@ body {
 .hideFullScreen {
     visibility: hidden;
 }
-border-bottom {
+.border-bottom {
     margin: 0;
 }
 
@@ -262,7 +266,7 @@ border-bottom {
 }
 
 .nav_dark {
-    background-color: #F6E8EA;
+    background-color: #F6E8EA !important;
 }
 
 .img_colors {
@@ -291,17 +295,12 @@ border-bottom {
 }
 /************ Skills margin ************/
 
-.left-skills {
-    margin: 0 4% 0 8%;
-}
 
-.mid-skills {
-    margin-right: 4%;
-}
 
-.right-skills {
-    margin-right: 9%;
-}
+/*.mid-skills {*/
+/*    margin-right: 4%;*/
+/*}*/
+
 
 .mid-text-margin {
     margin: 0 1% 0 1%;
@@ -324,6 +323,7 @@ border-bottom {
 }
 
 /************ Main index Content ************/
+
 .stackHeadline {
     font-size: 4em;
     padding: 20% 0 0 0;
@@ -574,6 +574,10 @@ border-bottom {
     display: none;
 }
 
+..box-property {
+    height: 33em;
+}
+
 .active_button {
     background-color: grey !important;
     color: #ffffff !important;
@@ -590,33 +594,6 @@ border-bottom {
     color: #6494AA !important;
 }
 
-/*.under_line_trans {*/
-/*    display: inline-block;*/
-/*    color: #ffffff;*/
-/*    text-decoration: none;*/
-
-/*}*/
-
-/*.under_line_trans::after {*/
-/*    content: '';*/
-/*    display: block;*/
-/*    width: 0;*/
-/*    height: 2px;*/
-/*    background: #6494AA;*/
-/*    transition: width .3s;*/
-/*    !*margin-top: 6%;*!*/
-
-/*}*/
-
-/*.under_line_trans:hover::after {*/
-/*    width: 100%;*/
-/*//transition: width .3s;*!*!*!*!*/
-/*}*/
-
-/*.card-img-top {*/
-/*    width: 10%;*/
-/*    height: auto;*/
-/*}*/
 
 .down_button {
     padding: 14% 0 0 0;
@@ -635,17 +612,6 @@ border-bottom {
     padding: 2em 0 1em 0;
 }
 
-/*.about-me-img {*/
-/*    width: 15em;*/
-/*    height: 15em;*/
-/*    border: solid  1px black;*/
-/*    border-radius: 50%;*/
-/*    display: inline-block;*/
-/*    !*margin: 0 0 5% 0;*!*/
-/*    margin-bottom: -8em;*/
-/*    background-color: #F6E8EA;*/
-/*    z-index: 1000;*/
-/*}*/
 
 .about-me-img>img {
     border-radius: 50%;
@@ -676,12 +642,6 @@ border-bottom {
     font-size: 1.2em;
 }
 
-/*.fade {*/
-/*    !*margin: 50px;*!*/
-/*    !*padding: 50px;*!*/
-/*    background-color: lightgreen;*/
-/*    opacity: 1;*/
-/*}*/
 
 .hideme {
     opacity: 0;
@@ -876,6 +836,9 @@ p {
     padding: 5% 0 3% 0;
     border-radius: 25px
 }
+
+
+
 .bottom_box {
     border-bottom: 1px inset #282829;
 
@@ -913,7 +876,22 @@ p {
     border-bottom: solid 1px #8B2635;
 
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
+    .stackHeadline {
+        font-size: 4em;
+        padding: 40% 0 0 0;
+    }
+
+    .down_button {
+        padding: 30% 0 20% 0;
+    }
+    .heading_space {
+        padding: 15% 0 5% 0;
+    }
+}
+
+
+@media (max-width: 992px) {
     /*Call out Queries*/
     .navbar-brand {
         font-size: 2em;
@@ -928,18 +906,6 @@ p {
         font-size: 1.3em;
     }
 
-    /*Hide Icons*/
-    /*.git_Transition {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*.linked_Transition {*/
-    /*    display: none*/
-    /*}*/
-
-    /*.cv_Transition {*/
-    /*    display: none;*/
-    /*}*/
 
     .stand_out {
         margin: 0 2% 0 2%;
@@ -999,24 +965,9 @@ p {
         background: #F6E8EA;
     }
 
-    .left-skills {
-        margin: 0;
-    }
 
-    .tablet-container-left {
-        margin: 0 3% 0 5%;
-    }
-    .tablet-container-right {
-        margin: 0 0 0 3%;
-    }
 
-    .tablet-container-bottom {
-        margin: 5% 5% 0 28% !important;
-    }
 
-    .card-mobile {
-        margin: 0 0 0 25% !important;
-    }
 
     .mobile-text {
         margin: 0 5% 0 5%;
@@ -1104,18 +1055,6 @@ p {
         font-size: 1.3em;
     }
 
-    /*Hide Icons*/
-    /*.git_Transition {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*.linked_Transition {*/
-    /*    display: none*/
-    /*}*/
-
-    /*.cv_Transition {*/
-    /*    display: none;*/
-    /*}*/
 
     .stand_out {
         margin: 0 2% 0 2%;
@@ -1132,7 +1071,6 @@ p {
         width: 70px;
         height: 70px;
         line-height: 4em;
-        /*background-color: #F1F3F4;*/
         margin: 4%;
     }
 
@@ -1175,24 +1113,9 @@ p {
         background: #F6E8EA;
     }
 
-    .left-skills {
-        margin: 0;
-    }
 
-    .tablet-container-left {
-        margin: 0 3% 0 5%;
-    }
-    .tablet-container-right {
-        margin: 0 0 0 3%;
-    }
 
-    .tablet-container-bottom {
-        margin: 5% 5% 0 28%;
-    }
 
-    .card-mobile {
-        margin: 0 0 0 20% !important;
-    }
 
     .mobile-text {
         margin: 0 5% 0 5%;
@@ -1280,19 +1203,6 @@ p {
         font-size: 1.3em;
     }
 
-    /*Hide Icons*/
-    /*.git_Transition {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*.linked_Transition {*/
-    /*    display: none*/
-    /*}*/
-
-    /*.cv_Transition {*/
-    /*    display: none;*/
-    /*}*/
-
     .stand_out {
         margin: 0 2% 0 2%;
     }
@@ -1351,23 +1261,10 @@ p {
         background: #F6E8EA;
     }
 
-    .left-skills {
-        margin: 0;
-    }
     .mobile-container {
         margin: 8% !important;
     }
 
-    /*.tablet-container-left {*/
-    /*    margin: 0 3% 0 5%;*/
-    /*}*/
-    /*.tablet-container-right {*/
-    /*    margin: 0 0 0 3%;*/
-    /*}*/
-
-    /*.tablet-container-bottom {*/
-    /*    margin: 5% 5% 0 28%;*/
-    /*}*/
 
     .card-mobile {
         margin: 0 0 0 0 !important;
@@ -1450,7 +1347,7 @@ p {
         font-size: 1.1em;
     }
     .stackHeadline {
-        font-size: 4em;
+        font-size: 3.5em;
         padding: 35% 0 0 0;
     }
     .under_headline {
@@ -1522,9 +1419,7 @@ p {
         box-shadow: none;
         background: #F6E8EA;
     }
-    .left-skills {
-        margin: 0;
-    }
+
     .mobile-container {
         margin: 8% !important;
     }
@@ -1605,7 +1500,7 @@ p {
         font-size: 1.1em;
     }
     .stackHeadline {
-        font-size: 3em;
+        font-size: 2.5em;
         padding: 30% 0 0 0;
     }
     .under_headline {
@@ -1677,9 +1572,7 @@ p {
         box-shadow: none;
         background: #F6E8EA;
     }
-    .left-skills {
-        margin: 0;
-    }
+
     .mobile-container {
         margin: 8% !important;
     }

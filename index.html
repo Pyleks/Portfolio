@@ -16,7 +16,7 @@
 <section class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <nav class="navbar navbar-inner navbar_change navbar-expand-lg fixed-top navbar-light nav_dark">
+            <nav class="navbar navbar-inner navbar_change navbar-expand-lg fixed-top navbar-light">
                 <a class="navbar-brand font_white" href="#">Aleksander Andersen</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,11 +25,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto font_white">
                         <a id="about" class="about-nav-link nav-item nav-link font_black hide_content" href="#about-me">About</a>
-                        <a id="portfolio" class="nav-item nav-link font_black hide_content" href="#portfolio-id">Work</a>
+                        <a id="portfolio" class="nav-item nav-link font_black hide_content"
+                           href="#portfolio-id">Work</a>
                         <a id="skills" class="nav-item nav-link font_black hide_content" href="#skills-id">Skills</a>
                         <a id="contact" class="nav-item nav-link font_black hide_content" href="#contact-me">Contact</a>
                         <a id="cv" class="nav-item nav-link font_black hide_content" href="#">CV</a>
-                        <a id="github" class="nav-item nav-link font_black hide_content" href="https://github.com/Pyleks" target="_blank">GitHub</a>
+                        <a id="github" class="nav-item nav-link font_black hide_content"
+                           href="https://github.com/Pyleks" target="_blank">GitHub</a>
                     </div>
                 </div>
             </nav>
@@ -67,7 +69,7 @@
                         <p class="font_white" id="github">GitHub</p>
                     </div>
                     <div class="circle_placement linked_Transition">
-                        <a class="icon_placement fab fa-linkedin fa-3x font_black"
+                        <a class="icon_placement fab fa-linkedin fa-3x font_black" f
                            href="https://www.linkedin.com/in/aleksander-andersen-639b08127/" target="_blank"></a>
                         <p class="font_white" id="linkedin">LinkedIn</p>
                     </div>
@@ -85,8 +87,8 @@
 <section id="scroll-down" class="down_button container-fluid fade-scroll">
     <div class="row no-pad text-center">
         <div class="col">
-            <p class="text-muted">Scroll Down</p>
-            <i class="fas fa-sort-down fa-3x font_white"></i>
+            <p class="text-muted toggle-scroll">Scroll Down</p>
+            <i class="fas fa-sort-down fa-3x toggle-scroll font_white"></i>
         </div>
     </div>
 </section>
@@ -135,7 +137,7 @@
         </div>
     </div>
     <div class="row img_container">
-        <div class="col-12 col-md-6 col-xl-4 animation-left vClass">
+        <div class="col-12 col-md-6 col-xl-4 animation-image vClass">
             <div class="card cyber_img">
                 <img src="assets/img/cyber-security.png" class="card-img-top image"
                      alt="...">
@@ -180,7 +182,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-xl-4 animation-middle vClass">
+        <div class="col-12 col-md-6 col-xl-4 animation-image vClass">
             <div class="card adventure_img">
                 <img src="assets/img/blockworm.png" class="card-img-top image img_container"
                      alt="...">
@@ -226,7 +228,7 @@
                 <hr class="hideFullScreen">
             </div>
         </div>
-        <div class="col-12 col-md-6 col-xl-4 card-mobile animation-right vClass">
+        <div class="col-12 col-md-6 col-xl-4 card-mobile animation-image vClass">
             <div class="card port_img">
                 <img src="assets/img/portfolio.png" class="card-img-top image img_container"
                      alt="...">
@@ -285,7 +287,7 @@
 </section>
 
 <!-- SKills Container -->
-<section id="skills-id" class="skills-container container-fluid text-center">
+<section id="skills-id" class="skills-container container text-center">
     <div class="row text-center">
         <div class="col-12">
             <h2 class="font_black heading_size skills-heading">
@@ -294,52 +296,88 @@
         </div>
     </div>
     <div class="row text-center">
-        <div class="col-10 col-md-5 col-xl-3 box_container_left bottom_box box_container left-skills box_shadow vClass mobile-container
-            tablet-container-left">
-            <i class="fas fa-palette fa-3x img_colors"></i>
-            <h2 class="skill_font">Designer</h2>
-            <p class="spec-font">Passion for simple but powerful front-end design, delivering a good and seamless user
-                experience.</p>
-            <h3 class="lang_header_size img_colors">Tools</h3>
-            <ul>
-                <li class="lang_icons">HTML</li>
-                <li class="lang_icons">CSS</li>
-                <li class="lang_icons">Javascript</li>
-                <li class="lang_icons">jQuery</li>
-                <li class="lang_icons">BootStrap</li>
-            </ul>
+        <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card nav_dark">
+                <div class="box-property box_container_left bottom_box box_container left-skills box_shadow vClass mobile-container
+                    tablet-container-left">
+
+                    <i class="fas fa-palette fa-3x img_colors"></i>
+                    <h2 class="skill_font">Designer</h2>
+                    <p class="spec-font">Passion for simple but powerful front-end design, delivering a good and
+                        seamless
+                        user
+                        experience.</p>
+                    <h3 class="lang_header_size img_colors">Tools</h3>
+                    <ul>
+                        <li class="lang_icons">HTML</li>
+                        <li class="lang_icons">CSS</li>
+                        <li class="lang_icons">Javascript</li>
+                        <li class="lang_icons">jQuery</li>
+                        <li class="lang_icons">BootStrap</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-10 col-md-5 col-xl-3 box_container mid-skills box_container_left box_shadow vClass mobile-container
+        <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card nav_dark">
+                <div class="box-property box_container mid-skills box_container_left box_shadow vClass mobile-container
                     tablet-container-right">
-            <i class="fas fa-code fa-3x img_colors"></i>
-            <h2 class="skill_font">Coder</h2>
-            <p class="spec-font mid-text-margin">I enjoy working with more complex back-end operations and
-                databases. </p>
-            <h3 class="lang_header_size img_colors">Languages</h3>
-            <ul>
-                <li class="lang_icons">Python 2.7 + 3.</li>
-                <li class="lang_icons">Flask (Python)</li>
-                <li class="lang_icons">MongoDB</li>
-                <li class="lang_icons">mySQL</li>
-                <li class="lang_icons">bash</li>
-            </ul>
+                    <i class="fas fa-code fa-3x img_colors"></i>
+                    <h2 class="skill_font">Coder</h2>
+                    <p class="spec-font mid-text-margin">I enjoy working with more complex back-end operations and
+                        databases. </p>
+                    <h3 class="lang_header_size img_colors">Languages</h3>
+                    <ul>
+                        <li class="lang_icons">Python 2.7 + 3.</li>
+                        <li class="lang_icons">Flask (Python)</li>
+                        <li class="lang_icons">MongoDB</li>
+                        <li class="lang_icons">mySQL</li>
+                        <li class="lang_icons">bash</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-10 col-md-5 col-xl-3 box_container right-skills bottom_box box_container_left box_shadow vClass mobile-container
+        <div class="offset-sm-0 col-sm-12 offset-md-3 col-md-6 offset-xl-0 col-xl-4">
+            <div class="card nav_dark">
+                <div class="box-property box_container right-skills bottom_box box_container_left box_shadow vClass mobile-container
                     tablet-container-bottom">
-            <i class="fas fa-cogs fa-3x img_colors"></i>
-            <h2 class="skill_font">Diverse</h2>
-            <p class="spec-font right-text-margin">Choosing the right tools and services have always been the key
-                success</p>
-            <h3 class="lang_header_size img_colors">Others</h3>
-            <ul>
-                <li class="lang_icons">GitHub</li>
-                <li class="lang_icons">Heroku</li>
-                <li class="lang_icons">Balsamiq</li>
-                <li class="lang_icons">Intellij Ultima IDE</li>
-                <li class="lang_icons">AWS</li>
-                <li class="lang_icons">Azure</li>
-            </ul>
+                    <i class="fas fa-cogs fa-3x img_colors"></i>
+                    <h2 class="skill_font">Diverse</h2>
+                    <p class="spec-font right-text-margin">Choosing the right tools and services have always been the
+                        key
+                        success</p>
+                    <h3 class="lang_header_size img_colors">Others</h3>
+                    <ul>
+                        <li class="lang_icons">GitHub</li>
+                        <li class="lang_icons">Heroku</li>
+                        <li class="lang_icons">Balsamiq</li>
+                        <li class="lang_icons">Intellij Ultima IDE</li>
+                        <li class="lang_icons">AWS</li>
+                        <li class="lang_icons">Azure</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+<!--        <div class="col-sm-12 col-md-6 col-xl-4">-->
+<!--            <div class="card nav_dark">-->
+<!--                <div class="box-property box_container right-skills bottom_box box_container_left box_shadow vClass mobile-container-->
+<!--                    tablet-container-bottom">-->
+<!--                    <i class="fas fa-smile-beam fa-3x img_colors"></i>-->
+<!--                    <h2 class="skill_font">Soft Skills</h2>-->
+<!--                    <p class="spec-font right-text-margin">Choosing the right tools and services have always been the-->
+<!--                        key-->
+<!--                        success</p>-->
+<!--                    <h3 class="lang_header_size img_colors">Others</h3>-->
+<!--                    <ul>-->
+<!--                        <li class="lang_icons">Code Insitute Channel Lead (Interactive Development)</li>-->
+<!--                        <li class="lang_icons">Technical Classroom Trainer</li>-->
+<!--                        <li class="lang_icons">1 on 1 Trainer</li>-->
+<!--                        <li class="lang_icons">Career Developer</li>-->
+<!--                        <li class="lang_icons">Co-found of work Running Club</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 

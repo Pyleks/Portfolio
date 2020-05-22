@@ -63,11 +63,20 @@ $(document).ready(function(){
     // });
 
     $(window).on("scroll resize load", () => {
+        if($(window).scrollTop() >= 200 && $(window).scrollTop() <= 900) {
+            $(".toggle-scroll").addClass('hide_content');
+        }
+        else {
+            $(".toggle-scroll").removeClass('hide_content');
+        }
+
+
         if($(window).scrollTop() >= 500 && $(window).scrollTop() <= 1400) {
             console.log("WTF");
             $("#about").addClass("active-section");
             $(".animation-wrap").removeClass('vClass');
-            $(".animation-wrap").addClass('animated animatedFadeInUp fadeInUp')
+            $(".animation-wrap").addClass('animated animatedFadeInUp fadeInUp');
+
         }
         else {
             $("#about").removeClass("active-section");
@@ -76,12 +85,8 @@ $(document).ready(function(){
         if($(window).scrollTop() >= 1401 && $(window).scrollTop() <= 2000) {
             console.log("WTF");
             $("#portfolio").addClass("active-section");
-            $(".animation-left").removeClass('vClass');
-            $(".animation-left").addClass('animated animatedFadeInUp fadeinLeft')
-            $(".animation-right").removeClass('vClass');
-            $(".animation-right").addClass('animated animatedFadeInUp fadeinRight')
-            $(".animation-middle").removeClass('vClass');
-            $(".animation-middle").addClass('animated animatedFadeInUp fadeinMiddle')
+            $(".animation-image").removeClass('vClass');
+            $(".animation-image").addClass('animated animatedFadeInUp fadeInUp')
         }
         else {
             $("#portfolio").removeClass("active-section");
