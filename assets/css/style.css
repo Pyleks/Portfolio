@@ -596,7 +596,7 @@ body {
 
 
 .down_button {
-    padding: 14% 0 0 0;
+    padding: 15% 0 20% 0;
     /*position:fixed;*/
     /*left:0px;*/
     /*bottom:0px;*/
@@ -883,7 +883,7 @@ p {
     }
 
     .down_button {
-        padding: 30% 0 20% 0;
+        padding: 20% 0 0 0;
     }
     .heading_space {
         padding: 15% 0 5% 0;
