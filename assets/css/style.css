@@ -326,7 +326,10 @@ body {
 
 .stackHeadline {
     font-size: 4em;
-    padding: 20% 0 0 0;
+}
+
+.middle-placement {
+    margin: 35vh 0 35vh 0;
 }
 
 .border-style-white {
@@ -605,7 +608,7 @@ body {
 }
 
 .heading_space {
-    padding: 60vh 0 1vh 0;
+    padding: 40vh 0 1vh 0;
 }
 
 
