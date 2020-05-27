@@ -596,12 +596,8 @@ body {
 
 
 .down_button {
-    padding: 15% 0 20% 0;
-    /*position:fixed;*/
-    /*left:0px;*/
-    /*bottom:0px;*/
-    /*width:100%*/
-    /*text-align: center;*/
+    position: fixed;
+    bottom: 0;
 }
 
 .heading_size {
@@ -609,7 +605,7 @@ body {
 }
 
 .heading_space {
-    padding: 2em 0 1em 0;
+    padding: 10em 0 1em 0;
 }
 
 

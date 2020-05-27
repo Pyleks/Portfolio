@@ -63,7 +63,7 @@ $(document).ready(function(){
     // });
 
     $(window).on("scroll resize load", () => {
-        if($(window).scrollTop() >= 200 && $(window).scrollTop() <= 900) {
+        if($(window).scrollTop() >= 200) {
             $(".toggle-scroll").addClass('hide_content');
         }
         else {
