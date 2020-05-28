@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    if($(window).scrollTop() >= 50) {
+        $('body').addClass('change_color')
+
+    }
     $('#about_id').hide();
     $("#about_id").slideDown('slow');
     // let scroll_pos = 0;
