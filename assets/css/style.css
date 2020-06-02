@@ -69,6 +69,10 @@ body {
 .mobile-buttons {
     visibility: hidden;
 }
+
+a {
+    text-decoration: none !important;
+}
 /************ Animations ************/
 /* Animation */
 
@@ -310,7 +314,8 @@ body {
     margin: 0 3% 0 3%;
 }
 
-.no-pad {
+
+.no-margin {
     margin: 0 0 0 0 !important;
 }
 
@@ -386,6 +391,11 @@ body {
 
 .icon_placement {
     vertical-align: middle;
+}
+
+
+.no-decor {
+    text-decoration: none !important;
 }
 
 .call_icons {
@@ -886,6 +896,20 @@ p {
     .heading_space {
         padding: 15% 0 5% 0;
     }
+
+    .cyber_img:hover .overlay {
+        bottom: 0;
+        height: 0;
+    }
+    .adventure_img:hover .overlay {
+        bottom: 0;
+        height: 0;
+    }
+    .port_img:hover .overlay {
+        bottom: 0;
+        height: 0;
+    }
+
 }
 
 
@@ -1382,17 +1406,16 @@ p {
         width: 70px;
         height: 70px;
         line-height: 4em;
-        /*background-color: #F1F3F4;*/
         margin: 4%;
     }
     .fa-3x {
         font-size: 3em !important;
     }
 
-
     /*About me*/
     .heading_size {
         font-size: 3em;
+        padding: 25% 0 5% 0;
     }
     .about-me-img>img {
         height: 150px;
@@ -1420,7 +1443,7 @@ p {
     }
 
     .mobile-container {
-        margin: 8% !important;
+        margin: 10% !important;
     }
     .mobile-text {
         margin: 0 5% 0 5%;
@@ -1571,7 +1594,7 @@ p {
     }
 
     .mobile-container {
-        margin: 8% !important;
+        margin: 10% !important;
     }
     .mobile-text {
         margin: 0 5% 0 5%;
@@ -1638,6 +1661,10 @@ p {
         opacity: 1;
         animation-name: none;
         -webkit-animation-name: none;
+    }
+
+    .no-pad {
+        padding: 0 0 0 0 !important;
     }
 
 
