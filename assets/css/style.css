@@ -38,11 +38,6 @@ body {
 }
 
 .change_color {
-    /*background-color: #E6E8E6;*/
-    /*background-color: #F9EBE0;*/
-    /*background-color: #E0DFD5;*/
-    /*background-color: #E4C3AD;*/
-    /*background-color: #F9F8F8;*/
     background-color: #F6E8EA !important;
     transition: 0.3s all;
 }
@@ -299,13 +294,6 @@ a {
 }
 /************ Skills margin ************/
 
-
-
-/*.mid-skills {*/
-/*    margin-right: 4%;*/
-/*}*/
-
-
 .mid-text-margin {
     margin: 0 1% 0 1%;
 }
@@ -321,7 +309,6 @@ a {
 
 /************ Navbar Callout ************/
 .box {
-    /*width: 300px;*/
     border: 1px solid black;
     padding: 0.1em;
     /*margin: 0.5em;*/
@@ -1556,7 +1543,6 @@ p {
         width: 70px;
         height: 70px;
         line-height: 4em;
-        /*background-color: #F1F3F4;*/
         margin: 4%;
     }
     .fa-3x {
