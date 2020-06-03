@@ -5,15 +5,7 @@ $(document).ready(function(){
     }
     $('#about_id').hide();
     $("#about_id").slideDown('slow');
-    // let scroll_pos = 0;
-    // $(document).scroll(function() {
-    //     scroll_pos = $(this).scrollTop();
-    //     if(scroll_pos > 500) {
-    //         $("body").css('background-color', '#E6E8E6');
-    //     } else {
-    //         $("body").css('background-color', '#1E1E24');
-    //     }
-    // });
+
 
     $(function() {
         let documentEl = $(document),
@@ -28,43 +20,12 @@ $(document).ready(function(){
         });
     });
 
-    // $(window).scroll( function(){
-    //
-    //     /* Check the location of each desired element */
-    //     $('.hideme').each( function(i){
-    //
-    //         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-    //         var bottom_of_window = $(window).scrollTop() + $(window).height();
-    //
-    //         /* If the object is completely visible in the window, fade it it */
-    //         if( bottom_of_window > bottom_of_object ){
-    //
-    //             $(this).animate({'opacity':'1'},100);
-    //             // $(this).animate({'opacity': '1'}, 100).slideDown('slow');
-    //             $('.btn').removeClass('hidden_button')
-    //
-    //         }
-    //
-    //     });
-    //
-    // });
 
     $("#back_top").on("click",function() {
         $(".navigation_icons").css("opacity", "1");
         $(".down_button").css("opacity", "1");
     });
 
-    /*-- Back to top btn --*/
-
-    // let btn = $('#back-to-top');
-    //
-    // $(window).scroll(() => {
-    //     if ($(window).scrollTop() > 300) {
-    //         btn.addClass('show');
-    //     } else {
-    //         btn.removeClass('show');
-    //     }
-    // });
 
     $(window).on("scroll resize load", () => {
         if($(window).scrollTop() >= 200) {
@@ -121,70 +82,9 @@ $(document).ready(function(){
             $("#contact").removeClass("active-section");
         }
 
-        // expand navbar once at top
-
-        // navlink top offset variables
-        // var top = $("#top").offset().top - 200;
-        // var about = $("#about-me");
-        // var portfolio = $("#portfolio");
-        // var skills = $("#skills").offset().top - 200;
-        // var contact = $("#contact").offset().top - 500;
-
-        // update navlinks when sections in viewport
-        // if ($(window).scrollTop() >= top && $(window).scrollTop() <= about) {
-        //     $("#navlink-top").addClass("active-section");
-        // } else {
-        //     $("#navlink-top").removeClass("active-section");
-        // }
-        // if ($(window).scrollTop() >= about && $(window).scrollTop() <= portfolio ) {
-        //     $(".about-nav-link").addClass("active-section");
-        //
-        //     // $("#about h2 span").addClass("heading-span-active");
-        // } else {
-        //     $(".about-nav-link").removeClass("active-section");
-        //     // $("#about h2 span").removeClass("heading-span-active");
-        // }
-    //     if ($(window).scrollTop() >= portfolio && $(window).scrollTop() <= skills) {
-    //         $("#navlink-portfolio").addClass("active-section");
-    //         $("#portfolio h2 span").addClass("heading-span-active");
-    //     } else {
-    //         $("#navlink-portfolio").removeClass("active-section");
-    //         $("#portfolio h2 span").removeClass("heading-span-active");
-    //     }
-    //     if ($(window).scrollTop() >= skills && $(window).scrollTop() <= contact) {
-    //         $("#navlink-skills").addClass("active-section");
-    //         $("#skills h2 span").addClass("heading-span-active");
-    //     } else {
-    //         $("#navlink-skills").removeClass("active-section");
-    //         $("#skills h2 span").removeClass("heading-span-active");
-    //     }
-    //     if ($(window).scrollTop() >= contact) {
-    //         $("#navlink-contact").addClass("active-section");
-    //         $("#contact h2 span").addClass("heading-span-active");
-    //     } else {
-    //         $("#navlink-contact").removeClass("active-section");
-    //         $("#contact h2 span").removeClass("heading-span-active");
-    //     }
     });
 
 
-
-
-
-// $(document).scroll(function() {
-    //     var alpha = Math.min(0.5 + 0.4 * $(this).scrollTop() / 210, 0.9);
-    //     // var channel = Math.round(alpha * 100);
-    //     $("body").css('background-color', 'rgb(243, 252, 240)');
-    // });
-
-    // const [red, green, blue] = [243, 252, 240];
-    // const section1 = document.querySelector('body');
-    //
-    // window.addEventListener('scroll', () => {
-    //     const y = 1 + (window.scrollY || window.pageYOffset) / 150;
-    //     const [r, g, b] = [red/y, green/y, blue/y].map(Math.round);
-    //     section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-    // });
 
     $(function() {
         $(window).scroll(function () {
@@ -247,12 +147,7 @@ $(document).ready(function(){
         $(this).addClass("active_button")
 
     });
-    // $("a").mouseover(function() {
-    //     $(this).addClass("bg_green_dark")
-    // });
-    // $("a").mouseleave(function() {
-    //     $(this).removeClass("bg_green_dark")
-    // });
+
 
     let myUrl = window.location.href;
     let rawUrl = myUrl.slice(22, 27);
