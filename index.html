@@ -18,7 +18,8 @@
         <div class="col-12">
             <nav class="navbar navbar-inner navbar_change navbar-expand-lg fixed-top navbar-light">
                 <a class="navbar-brand font_white" href="#">Aleksander Andersen</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                <button class="navbar-toggler hide_nav" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,38 +52,38 @@
                         <a class="icon_placement fas fa-user fa-3x font_black" href="#about-me"></a>
                         <p class="font_white" id="about">About</p>
                     </div>
-                    <div class="circle_placement text-center work_Transition" >
+                    <div class="circle_placement text-center work_Transition">
                         <a class="icon_placement fas fa-file-code fa-3x font_black" href="#portfolio-id"></a>
                         <p class="font_white" id="work">Work</p>
                     </div>
                     <a href="#skills-id">
-                    <div class="circle_placement skills_transition">
-                        <a class="icon_placement fas fa-certificate fa-3x font_black" href="#skills-id" ></a>
-                        <p class="font_white" id="skills">Skills</p>
+                        <div class="circle_placement skills_transition">
+                            <a class="icon_placement fas fa-certificate fa-3x font_black" href="#skills-id"></a>
+                            <p class="font_white" id="skills">Skills</p>
                     </a>
-                    </div>
-                    <div class="circle_placement contact_Transition">
-                        <a class="icon_placement fas fa-comments fa-3x font_black" href="#contact-me"></a>
-                        <p class="font_white" id="contact">Contact</p>
-                    </div>
-                    <div class="circle_placement git_Transition">
-                        <a class="icon_placement fab fa-github fa-3x font_black" href="https://github.com/Pyleks"
-                           target="_blank"></a>
-                        <p class="font_white" id="github">GitHub</p>
-                    </div>
-                    <div class="circle_placement linked_Transition">
-                        <a class="icon_placement fab fa-linkedin fa-3x font_black" f
-                           href="https://www.linkedin.com/in/aleksander-andersen-639b08127/" target="_blank"></a>
-                        <p class="font_white" id="linkedin">LinkedIn</p>
-                    </div>
-                    <div class="circle_placement text-center cv_Transition">
-                        <i class="icon_placement fas fa-sticky-note fa-3x font_black"></i>
-                        <p class="font_white" id="cv">CV</p>
-                    </div>
                 </div>
-
+                <div class="circle_placement contact_Transition">
+                    <a class="icon_placement fas fa-comments fa-3x font_black" href="#contact-me"></a>
+                    <p class="font_white" id="contact">Contact</p>
+                </div>
+                <div class="circle_placement git_Transition">
+                    <a class="icon_placement fab fa-github fa-3x font_black" href="https://github.com/Pyleks"
+                       target="_blank"></a>
+                    <p class="font_white" id="github">GitHub</p>
+                </div>
+                <div class="circle_placement linked_Transition">
+                    <a class="icon_placement fab fa-linkedin fa-3x font_black" f
+                       href="https://www.linkedin.com/in/aleksander-andersen-639b08127/" target="_blank"></a>
+                    <p class="font_white" id="linkedin">LinkedIn</p>
+                </div>
+                <div class="circle_placement text-center cv_Transition">
+                    <i class="icon_placement fas fa-sticky-note fa-3x font_black"></i>
+                    <p class="font_white" id="cv">CV</p>
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
 </section>
 <!--Scroll Down section-->
@@ -103,7 +104,7 @@
             <h2 class="font_black heading_size heading_space">
                 About Me
             </h2>
-            <div class="animation-wrap vClass">
+            <div class="animation-wrap">
                 <div class="about-me-img">
                     <img <img src="assets/img/usagain.png" alt="selfie">
                 </div>
@@ -128,165 +129,140 @@
 
 
 <!-- Portfolio Container -->
-<section id="portfolio-id" class="Portfolio-container container-fluid">
-    <div class="row">
-        <div class="col-12 text-center">
-            <h2 class="font_black heading_size portfolio-heading">
+<div class="container py-2">
+    <div class="row min-vh-100 align-items-center">
+        <div class="col-lg-10 offset-lg-1" id="slider">
+            <h2 class="font_black heading_size portfolio-heading text-center">
                 My Work
             </h2>
-            <p class="para_spacing spec-font">Below you will see 3 of my projects from code Insitute, please see my
-                GitHub account for more.</p>
+            <div id="myCarousel" class="carousel slide shadow">
+                <!-- main slider carousel items -->
+                <div class="carousel-inner">
+                    <div id="cyberSecurity" class="active carousel-item" data-slide-number="0">
+                        <img src="assets/img/cyber-security.png" class="img-fluid">
+                        <div class="cyber-security-languages">
+                            <ul class="lang-indicator list-inline mx-auto px-2">
+                                <li class="lang-box list-inline">HTML</li>
+                                <li class="lang-box list-inline">CSS</li>
+                                <li class="lang-box list-inline">Bootstrap</li>
+                            </ul>
+                            <ul class="lang-indicator list-inline mx-auto px-2">
+                                <li class="live-link-box list-inline">
+                                    <a class="text-white" href="https://github.com/Pyleks/cyber-security-course" target="_blank">Github</a>
+                                </li>
+                                <li class="live-link-box list-inline">
+                                    <a class="text-white" href="https://pyleks.github.io/cyber-security-course/" target="_blank">Live
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-slide-number="1">
+                        <img src="assets/img/blockworm.png" class="img-fluid">
+                        <div class="Blockworm-Adventure-languages">
+                            <ul class="lang-indicator list-inline mx-auto px-2">
+                                <li class="lang-box list-inline">HTML</li>
+                                <li class="lang-box list-inline">CSS</li>
+                                <li class="lang-box list-inline">Bootstrap</li>
+                                <li class="lang-box list-inline">Javascript</li>
+                                <li class="lang-box list-inline">jQuery</li>
+                            </ul>
+                            <ul class="lang-indicator list-inline mx-auto px-2">
+                                <li class="live-link-box list-inline">
+                                    <a class="text-white" href="https://github.com/Pyleks/milestone-project-two" target="_blank">Github</a>
+                                </li>
+                                <li class="live-link-box list-inline">
+                                    <a class="text-white" href="https://pyleks.github.io/milestone-project-two/" target="_blank">Live
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-slide-number="2">
+                        <img src="assets/img/the-happy-bun.png" class="img-fluid">
+                        <div class="the-happy-bun-languages">
+                            <ul class="lang-indicator list-inline mx-auto px-2">
+                                <li class="lang-box list-inline">HTML</li>
+                                <li class="lang-box list-inline">CSS</li>
+                                <li class="lang-box list-inline">Bootstrap</li>
+                                <li class="lang-box list-inline">Javascript</li>
+                                <li class="lang-box list-inline">jQuery</li>
+                                <li class="lang-box list-inline">Python</li>
+                                <li class="lang-box list-inline">Flask</li>
+                                <li class="lang-box list-inline">MongoDB</li>
+                            </ul>
+                            <ul class="lang-indicator list-inline mx-auto px-2">
+                                <li class="live-link-box list-inline">
+                                    <a class="text-white" href="https://github.com/Pyleks/Milestone-Project-3" target="_blank">Github</a>
+                                </li>
+                                <li class="live-link-box list-inline">
+                                    <a class="text-white" href="https://the-happy-bun.herokuapp.com/" target="_blank">Live
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-slide-number="3">
+                        <img src="assets/img/portfolio.png" class="img-fluid">
+                        <div class="portfolio-languages">
+                            <ul class="lang-indicator list-inline mx-auto px-2">
+                                <li class="lang-box list-inline">HTML</li>
+                                <li class="lang-box list-inline">CSS</li>
+                                <li class="lang-box list-inline">Bootstrap</li>
+                                <li class="lang-box list-inline">Javascript</li>
+                                <li class="lang-box list-inline">jQuery</li>
+                            </ul>
+                            <ul class="lang-indicator list-inline mx-auto px-2">
+                                <li class="live-link-box list-inline">
+                                    <a class="text-white" href="https://github.com/Pyleks/Portfolio" target="_blank">Github</a>
+                                </li>
+                                <li class="live-link-box list-inline">
+                                    <a class="text-white" href="https://pyleks.github.io/Portfolio/" target="_blank">Live
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- main slider carousel nav controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="fas fa-arrow-alt-circle-left fa-3x font_purple" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="fas fa-arrow-alt-circle-right fa-3x font_purple" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+
+
+                <!--                Preview about the project-->
+                <ul class="carousel-indicators list-inline mx-auto border px-2">
+                    <li class="list-inline-item active">
+                        <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
+                            <img src="assets/img/cyber-security.png" class="img-size">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
+                            <img src="assets/img/blockworm.png" class="img-size">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
+                            <img src="assets/img/the-happy-bun.png" class="img-size">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
+                            <img src="assets/img/portfolio.png" class="img-size">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
+
     </div>
-    <div class="row img_container">
-        <div class="col-12 col-md-6 col-xl-4 animation-image vClass">
-            <div class="card cyber_img">
-                <img src="assets/img/cyber-security.png" class="card-img-top image"
-                     alt="...">
-                <div class="card-body">
-                    <!--                    <h5 class="card-title text-center">Cyber Security</h5>-->
-                    <div class="overlay text-center">
-                        <!--                        <p class="CI_heading font_white">Code Institute Milestone Project 1</p>-->
-                        <p class="overlay_heading_placement font_white">Cyber Security Course</p>
-                        <p class="font_white spec-font">Code Institute Milestone Project 1</p>
-                        <a role="button" class="btn btn-primary font_white overlay_button"
-                           href="https://github.com/Pyleks/MongoDB-Python-Beginner" target="_blank">GitHub</a>
-                        <a role="button" class="btn btn-primary font_white overlay_button" href="#"
-                           target="_blank">Live</a>
-                    </div>
-                </div>
-            </div>
-            <div class="icon-wrap text-center">
-                <li class="block">
-                    <img src="assets/img/html5.png" alt="html">
+    <!--/main slider carousel-->
+</div>
 
-                </li>
-                <li class="block">
-                    <img src="assets/img/css3.png" alt="CSS">
-                </li>
-
-                <li class="block">
-                    <img src="assets/img/javascript.png" alt="javascript">
-
-                </li>
-
-                <li class="block">
-                    <img src="assets/img/bootstrap.png" alt="bootstrap">
-
-                </li>
-            </div>
-            <div class="mobile-buttons text-center">
-                <a role="button" class="btn btn-primary font_white"
-                   href="https://github.com/Pyleks/MongoDB-Python-Beginner" target="_blank">Github</a>
-                <a role="button" class="btn btn-primary font_white" href="#"
-                   target="_blank">Live</a>
-                <hr class="hideFullScreen">
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-xl-4 animation-image vClass">
-            <div class="card adventure_img">
-                <img src="assets/img/blockworm.png" class="card-img-top image img_container"
-                     alt="...">
-                <div class="card-body">
-                    <!--                    <h5 class="card-title text-center">BlockWorm Adventure</h5>-->
-                    <div class="overlay text-center">
-                        <p class="overlay_heading_placement font_white">BlockWorm Adventure</p>
-                        <p class="font_white spec-font">Code Institute Milestone Project 2</p>
-                        <a role="button" class="btn btn-primary font_white overlay_button"
-                           href="https://github.com/Pyleks/MongoDB-Python-Beginner" target="_blank">Github</a>
-                        <a role="button" class="btn btn-primary font_white overlay_button" href="#"
-                           target="_blank">Live</a>
-                    </div>
-                </div>
-            </div>
-            <div class="icon-wrap text-center">
-                <li class="block">
-                    <img src="assets/img/html5.png" alt="html">
-
-                </li>
-                <li class="block">
-                    <img src="assets/img/css3.png" alt="CSS">
-                </li>
-
-                <li class="block">
-                    <img src="assets/img/javascript.png" alt="javascript">
-
-                </li>
-
-                <li class="block">
-                    <img src="assets/img/jQuery.png" alt="jQuery">
-                </li>
-
-                <li class="block">
-                    <img src="assets/img/bootstrap.png" alt="bootstrap">
-                </li>
-            </div>
-            <div class="mobile-buttons text-center">
-                <a role="button" class="btn btn-primary font_white"
-                   href="https://github.com/Pyleks/MongoDB-Python-Beginner" target="_blank">Github</a>
-                <a role="button" class="btn btn-primary font_white" href="#"
-                   target="_blank">Live</a>
-                <hr class="hideFullScreen">
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 card-mobile animation-image vClass">
-            <div class="card port_img">
-                <img src="assets/img/portfolio.png" class="card-img-top image img_container"
-                     alt="...">
-                <div class="card-body">
-                    <!--                    <h5 class="card-title text-center">Portfolio</h5>-->
-                    <div class="overlay text-center">
-                        <p class="overlay_heading_placement font_white">Portfolio</p>
-                        <p class="font_white spec-font">Personal Project</p>
-                        <a role="button" class="btn btn-primary font_white overlay_button"
-                           href="https://github.com/Pyleks/MongoDB-Python-Beginner" target="_blank">GitHub</a>
-                        <a role="button" class="btn btn-primary font_white overlay_button" href="#"
-                           target="_blank">Live</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="icon-wrap text-center">
-                <li class="block">
-                    <img <img src="assets/img/html5.png" alt="html">
-
-                </li>
-                <li class="block">
-                    <img <img src="assets/img/css3.png" alt="CSS">
-                </li>
-
-                <li class="block">
-                    <img <img src="assets/img/javascript.png" alt="javascript">
-
-                </li>
-
-                <li class="block">
-                    <img <img src="assets/img/jQuery.png" alt="jQuery">
-                </li>
-
-                <li class="block">
-                    <img <img src="assets/img/flask.png" alt="flask">
-                </li>
-
-                <li class="block">
-                    <img <img src="assets/img/python.png" alt="python">
-                </li>
-
-                <li class="block">
-                    <img <img src="assets/img/bootstrap.png" alt="bootstrap">
-                </li>
-            </div>
-            <div class="mobile-buttons text-center">
-                <a role="button" class="btn btn-primary font_white"
-                   href="https://github.com/Pyleks/MongoDB-Python-Beginner" target="_blank">Github</a>
-                <a role="button" class="btn btn-primary font_white" href="#"
-                   target="_blank">Live</a>
-                <hr class="hideFullScreen">
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- SKills Container -->
 <section id="skills-id" class="skills-container container text-center">
@@ -300,7 +276,7 @@
     <div class="row text-center">
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 no-pad">
             <div class="card nav_dark">
-                <div class="box-property box_container_left bottom_box box_container left-skills box_shadow vClass mobile-container
+                <div class="box-property box_container_left bottom_box box_container left-skills box_shadow mobile-container
                     tablet-container-left">
 
                     <i class="fas fa-palette fa-3x img_colors"></i>
@@ -322,16 +298,17 @@
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 no-pad">
             <div class="card nav_dark">
-                <div class="box-property box_container mid-skills box_container_left box_shadow vClass mobile-container
+                <div class="box-property box_container mid-skills box_container_left box_shadow mobile-container
                     tablet-container-right">
                     <i class="fas fa-code fa-3x img_colors"></i>
                     <h2 class="skill_font">Coder</h2>
                     <p class="spec-font mid-text-margin">I enjoy working with more complex back-end operations and
-                        databases.              </p>
+                        databases. </p>
                     <h3 class="lang_header_size img_colors">Languages</h3>
                     <ul>
                         <li class="lang_icons">Python 2.7 + 3.</li>
                         <li class="lang_icons">Flask (Python)</li>
+                        <li class="lang_icons">Django (Python)</li>
                         <li class="lang_icons">MongoDB</li>
                         <li class="lang_icons">mySQL</li>
                         <li class="lang_icons">bash</li>
@@ -341,7 +318,7 @@
         </div>
         <div class="offset-sm-0 col-sm-12 offset-md-3 col-md-4 offset-lg-0 col-lg-4 offset-xl-0 col-xl-4 no-pad">
             <div class="card nav_dark">
-                <div class="box-property box_container right-skills bottom_box box_container_left box_shadow vClass mobile-container
+                <div class="box-property box_container right-skills bottom_box box_container_left box_shadow mobile-container
                     tablet-container-bottom">
                     <i class="fas fa-cogs fa-3x img_colors"></i>
                     <h2 class="skill_font">Diverse</h2>
@@ -380,7 +357,7 @@
             </small>
         </div>
     </div>
-    <div class="row hire-animation vClass box-size">
+    <div class="row hire-animation box-size">
         <div class="col-12 col-md-6 col-xl-6">
             <div class="center-form">
                 <!-- Uses mailJS API to send mail -->
@@ -431,7 +408,8 @@
                                         </div>
                                         <div class="footer_circle linked_Transition">
                                             <a class="fab fa-linkedin fa-2x font_black"
-                                               href="https://www.linkedin.com/in/aleksander-andersen-639b08127/" target="_blank"></a>
+                                               href="https://www.linkedin.com/in/aleksander-andersen-639b08127/"
+                                               target="_blank"></a>
 
                                         </div>
                                         <div class="footer_circle cv_Transition">
