@@ -1,6 +1,15 @@
 $(document).ready(function(){
     if($(window).scrollTop() >= 50) {
-        $('body').addClass('change_color')
+        $('body').addClass('change_color');
+        $('#about').removeClass('hide_content');
+        $('#portfolio').removeClass('hide_content');
+        $('#github').removeClass('hide_content');
+        $('#contact').removeClass('hide_content');
+        $('#skills').removeClass('hide_content');
+        $('#cv').removeClass('hide_content');
+        $('.navbar').addClass('box_shadow');
+        $('.navbar-brand').addClass('font_black')
+
 
     }
     $('#about_id').hide();
