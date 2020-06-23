@@ -272,6 +272,10 @@ a {
     color: #8B2635;
 }
 
+.bg-green {
+    background-color: green;
+}
+
 /************ Colors ************/
 .font_white {
     color: #ffffff !important;
@@ -894,7 +898,7 @@ p {
     /*background-size: cover;*/
 }
 
-
+/*CSS FOR THE WORK BOX START HERE*/
 #myCarousel .list-inline {
     white-space:nowrap;
     overflow-x:auto;
@@ -913,42 +917,56 @@ p {
     text-indent: initial;
 }
 
-#myCarousel .lang-indicator {
-    position: static;
-    left: initial;
-    width: initial;
-    margin-left: initial;
+/*.lang-box {*/
+/*    display: inline;*/
+/*}*/
+
+
+.lang-indicator li {
+    line-height: 3;
+    display: inline;
 }
 
-.lang-indicator {
-    right: 0;
-    bottom: 0;
-    z-index: 15;
-    display: flex;
-    justify-content: center;
-    list-style: none;
+/*.lang-box {*/
+/*    text-align: center;*/
+/*}*/
+/*#myCarousel .lang-indicator {*/
+/*    position: static;*/
+/*    left: initial;*/
+/*    width: initial;*/
+/*    margin-left: initial;*/
+/*}*/
 
-}
+/*.lang-indicator {*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    list-style: none;*/
+/*}*/
 
-.lang-indicator > li {
-    margin-right: 3px;
-    margin-left: 3px;
-    background-clip: padding-box;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-}
+/*}*/
+
+/*.lang-indicator > li {*/
+/*    margin-right: 3px;*/
+/*    margin-left: 3px;*/
+/*    background-clip: padding-box;*/
+/*    border-top: 10px solid transparent;*/
+/*    border-bottom: 10px solid transparent;*/
+/*}*/
 
 
 
-#myCarousel .lang-indicator > li {
-    width: initial;
-    height: initial;
-    text-indent: initial;
-}
+/*#myCarousel .lang-indicator > li {*/
+/*    width: initial;*/
+/*    height: initial;*/
+/*    text-indent: initial;*/
+/*}*/
 
 .carousel-control-next, .carousel-control-prev {
     opacity: 1;
 }
+
 
 
 /*#myCarousel .carousel-indicators > li.active img {*/
@@ -962,14 +980,26 @@ p {
     color: white;
     opacity: 1 !important;
     padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
 }
 
 .live-link-box {
+    width: 3em;
+    height: 1em;
     background-color: green !important;
     color: white !important;
     opacity: 1 !important;
     padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0 0.2em 0 0.2em;
 }
+
+.project-name {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 0 0 1em 0;
+}
+
+/*END OF THE CSS FOR THE WORKBOX HERE*/
 
 @media (max-width: 1024px) {
     .hide_nav {
@@ -998,6 +1028,7 @@ p {
         bottom: 0;
         height: 0;
     }
+
 
 }
 
@@ -1453,6 +1484,10 @@ p {
         -webkit-animation-name: none;
     }
 
+    .img-size {
+        height: 4em;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -1601,7 +1636,7 @@ p {
         -webkit-animation-name: none;
     }
     .img-size {
-        height: 3em;
+        height: 2.5em;
     }
     .lang-box {
         font-size: 0.8em;
@@ -1609,7 +1644,9 @@ p {
     .live-link-box {
         font-size: 0.8em;
     }
-
+    .project-name {
+        font-size: 1.3em;
+    }
 
 }
 
@@ -1762,6 +1799,13 @@ p {
 
     .no-pad {
         padding: 0 0 0 0 !important;
+    }
+
+    .img-size {
+        height: 2em;
+    }
+    .project-name {
+        font-size: 1.2em;
     }
 
 }
