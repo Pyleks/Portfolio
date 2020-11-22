@@ -962,8 +962,8 @@ p {
         visibility: visible;
     }
 
-    .back_top_button {
-        visibility: hidden;
+    #back_top {
+        background-color: rgba(8,65,88,0.3) !important;
     }
 
     .contact-headline {
@@ -1112,9 +1112,9 @@ p {
         visibility: visible;
     }
 
-    .back_top_button {
-        visibility: hidden;
-    }
+    /*.back_top_button {*/
+    /*    visibility: hidden;*/
+    /*}*/
 
     .contact-headline {
         padding: 0 0 5% 0;
@@ -1267,9 +1267,9 @@ p {
         visibility: visible;
     }
 
-    .back_top_button {
-        visibility: hidden;
-    }
+    /*.back_top_button {*/
+    /*    visibility: hidden;*/
+    /*}*/
 
     .contact-headline {
         padding: 0 0 5% 0;
@@ -1420,9 +1420,9 @@ p {
         visibility: visible;
     }
 
-    .back_top_button {
-        visibility: hidden;
-    }
+    /*.back_top_button {*/
+    /*    visibility: hidden;*/
+    /*}*/
 
     .contact-headline {
         padding: 0 0 5% 0;
@@ -1581,9 +1581,9 @@ p {
         visibility: visible;
     }
 
-    .back_top_button {
-        visibility: hidden;
-    }
+    /*.back_top_button {*/
+    /*    visibility: hidden;*/
+    /*}*/
 
     .contact-headline {
         padding: 0 0 5% 0;
