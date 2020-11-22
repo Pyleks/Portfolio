@@ -20,9 +20,9 @@ $(document).ready(function(){
         let documentEl = $(document),
             fadeElem = $('.fade-scroll');
         documentEl.on('scroll', function() {
-            var currScrollPos = documentEl.scrollTop();
+            let currScrollPos = documentEl.scrollTop();
             fadeElem.each(function() {
-                var $this = $(this),
+                let $this = $(this),
                     elemOffsetTop = $this.offset().top;
                 if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/200);
             });
@@ -160,8 +160,6 @@ $(document).ready(function(){
         $("#contact").removeClass("hide_content");
         $("#about").addClass("active_nav");
         $("#about").removeClass("under_line_trans");
-        
-
     }});
 
 
