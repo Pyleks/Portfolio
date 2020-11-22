@@ -337,6 +337,7 @@
                         <li class="lang_icons">Intellij Ultima IDE</li>
                         <li class="lang_icons">AWS</li>
                         <li class="lang_icons">Azure</li>
+                        <li class="lang_icons">Photoshop</li>
                     </ul>
                 </div>
             </div>
@@ -367,16 +368,19 @@
                 <!-- Uses mailJS API to send mail -->
                 <form class="text-center spec-font" onsubmit="return sendMail(this);" method="POST">
                     <div class="form-group">
+                        <label id="nameLabel" class="float-left mb-2">Name</label>
                         <input type="text" name="name" class="form-control "
-                               id="name" placeholder="Name*" required>
+                               id="name" placeholder="Minimum 3 Characters*" required>
                     </div>
                     <div class="form-group text-center">
+                        <label id="emailLabel" class="float-left mb-2">Email</label>
                         <input type="email" name="emailaddress" class="form-control feedback_form_style media-form"
-                               id="eMail" placeholder="Email*" required>
+                               id="email_id" placeholder="Email*" required>
                     </div>
                     <div class="form-group">
+                        <label id="portfolioLabel" class="float-left mb-2">Tell Me More</label>
                             <textarea rows="5" name="feedback" class="form-control media-text" id="portfolio_message"
-                                      placeholder="Tell me more*" required></textarea>
+                                      placeholder="Minimum 8 Characters*" required></textarea>
                     </div>
                     <button id="submit-button" type="submit" class="btn btn-secondary submit-btn">Submit</button>
                 </form>

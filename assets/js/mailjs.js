@@ -1,4 +1,9 @@
 function sendMail(contactForm) {
+    let name = $("#name").val();
+    let portfolio_message = $("#portfolio_message").val();
+    let email = $("#email_id").val();
+    const nameLabel = document.getElementById('nameLabel');
+    const feedback = document.getElementById('feedback');
     // Free mail API with restrictions, obtained from https://www.mailjs.com
     emailjs.init("user_3G60vDRXrJTJeNKzSxOOV");
     let templateParams = {
@@ -14,8 +19,12 @@ function sendMail(contactForm) {
             function (response) {
                 if (response) {
                     $("#submit-button").text("Thank you").removeClass("btn-secondary").addClass("bg-green font_white");
+                    $('#name').val('');
+                    $('#email_id').val('');
+                    $('#portfolio_message').val('');
 
                 }
+
             },
             // Change the color of button to red, with "Try Again Later"
             function (error) {
@@ -26,8 +35,4 @@ function sendMail(contactForm) {
             }
         );
     return false;  // To block from loading a new page
-
-
-
-
 }

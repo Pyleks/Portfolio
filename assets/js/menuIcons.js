@@ -29,12 +29,6 @@ $(document).ready(function(){
         });
     });
 
-    // let children = document.querySelectorAll('#myCarousel #cyberSecurity');
-    // if("active carousel-item" in children[0]) {
-    //     console.log("lol")
-    // } else {
-    //     console.log("Alright child")
-    // }
 
 
     $("#back_top").on("click",function() {
@@ -53,10 +47,8 @@ $(document).ready(function(){
 
 
         if($(window).scrollTop() >= 500 && $(window).scrollTop() <= 1400) {
-            console.log("WTF");
             $("#about").addClass("active-section");
-            // $(".animation-wrap").removeClass('vClass');
-            // $(".animation-wrap").addClass('animated animatedFadeInUp fadeInUp');
+
 
         }
         else {
@@ -64,34 +56,26 @@ $(document).ready(function(){
         }
 
         if($(window).scrollTop() >= 1401 && $(window).scrollTop() <= 2000) {
-            console.log("WTF");
             $("#portfolio").addClass("active-section");
-            // $(".animation-image").removeClass('vClass');
-            // $(".animation-image").addClass('animated animatedFadeInUp fadeInUp')
+
         }
         else {
             $("#portfolio").removeClass("active-section");
         }
 
         if($(window).scrollTop() >= 2001 && $(window).scrollTop() <= 2900) {
-            console.log("WTF");
             $("#skills").addClass("active-section");
             $(".right-skills").removeClass('vClass');
-            // $(".right-skills").addClass('animated animatedFadeInUp fadeLeftFirst')
-            // $(".mid-skills").removeClass('vClass');
-            // $(".mid-skills").addClass('delay-coder animatedFadeInUp fadeLeftFirst')
-            // $(".left-skills").removeClass('vClass');
-            // $(".left-skills").addClass('delay-designer animatedFadeInUp fadeLeftFirst')
+
         }
         else {
             $("#skills").removeClass("active-section");
         }
 
         if($(window).scrollTop() >= 2901) {
-            console.log("WTF");
             $("#contact").addClass("active-section");
             $(".hire-animation").removeClass('vClass');
-            // $(".hire-animation").addClass('animated animatedFadeInUp fadeInUp')
+
 
         }
         else {
@@ -179,23 +163,6 @@ $(document).ready(function(){
         
 
     }});
-    // console.log(rawUrl)
-    // http://127.0.0.1:5000/about
 
 
 
-
-let a = 10
-let b = 20
-let result;
-
-if (a < b) {
-    result = "a is smaller"
-} else {
-    result = "a is not smaller"
-}
-
-let stringTrue = "true";
-let booleanTrue = true;
-
-console.log(result)
